@@ -4,6 +4,7 @@
 import { BaseSession, BaseCommand, BaseMenu } from 'kasumi.js';
 import { Card } from 'kasumi.js';
 import { infoMenu } from './commands/info';
+import { whiteListMenu } from './commands/whitelist';
 /**
  * ping 命令 - 检查机器人是否在线
  */
@@ -65,4 +66,5 @@ export const commands: BaseCommand[] = [
 ];
 export const menus: BaseMenu[] = [
   infoMenu,
+  whiteListMenu,
 ];

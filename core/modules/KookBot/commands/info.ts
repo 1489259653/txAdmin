@@ -4,7 +4,6 @@ import { findPlayersByIdentifier } from '@lib/player/playerFinder';
 import { txEnv } from '@core/globalData';
 import { msToShortishDuration } from '@lib/misc';
 import consoleFactory from '@lib/console';
-import Logger from "bunyan";
 import { BaseCommand, BaseMenu, BaseSession } from 'kasumi.js';
 
 const console = consoleFactory(modulename);
@@ -215,7 +214,9 @@ export class BotInfoCommand extends BaseCommand {
 /**
  * Handler for /info
  */
-export const infoMenu = new InfoMenu(new SelfInfoCommand(), 
+export const infoMenu = new InfoMenu(
+  new SelfInfoCommand(), 
   new MemberInfoCommand(), 
   new IdInfoCommand(),
-  new BotInfoCommand());
+  new BotInfoCommand(),
+);
