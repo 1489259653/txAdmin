@@ -14,6 +14,7 @@ import type { GetConfigsResp, PartialTxConfigs, SaveConfigsReq, SaveConfigsResp 
 import SettingsTab from "./SettingsTab";
 import ConfigCardBans from "./tabCards/bans";
 import ConfigCardDiscord from "./tabCards/discord";
+import ConfigCardKook from "./tabCards/kook";
 import ConfigCardFxserver from "./tabCards/fxserver";
 import ConfigCardGameMenu from "./tabCards/gameMenu";
 import ConfigCardGameNotifications from "./tabCards/gameNotifications";
@@ -32,6 +33,7 @@ const settingsTabsBase = [
     { name: 'Bans', Component: ConfigCardBans },
     { name: 'Whitelist', Component: ConfigCardWhitelist },
     { name: 'Discord', Component: ConfigCardDiscord },
+    { name: 'KOOK', Component: ConfigCardKook },
     {
         name: 'Game',
         cards: [

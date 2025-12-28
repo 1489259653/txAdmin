@@ -2,6 +2,7 @@
     "name": "txadmin-shared",
     "version": "1.0.0",
     "description": "The shared package contains stuff used in more than one package, no build step required.",
+    "type": "module",
     "main": "index.js",
     "scripts": {
         "test": "echo \"No tests for this workspace. Skipping...\"",

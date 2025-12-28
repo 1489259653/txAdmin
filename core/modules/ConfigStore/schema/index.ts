@@ -6,6 +6,7 @@ import restarter from "./restarter";
 import banlist from "./banlist";
 import whitelist from "./whitelist";
 import discordBot from "./discordBot";
+import kookBot from "./kookBot";
 import gameFeatures from "./gameFeatures";
 import webServer from "./webServer";
 import logger from "./logger";
@@ -33,6 +34,7 @@ export const ConfigSchemas_v2 = {
     banlist,
     whitelist,
     discordBot,
+    kookBot,
     gameFeatures,
     webServer,
     logger,

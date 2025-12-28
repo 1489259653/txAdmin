@@ -36,12 +36,14 @@
     "dequal": "^2.0.3",
     "humanize-duration": "^3.32.1",
     "jsonrepair": "^3.11.2",
+    "kasumi.js": "^0.6.11",
     "lodash-es": "^4.17.21",
     "semver": "^7.6.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@types/bunyan": "^1.8.11",
     "@types/humanize-duration": "^3.27.4",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.7.5",

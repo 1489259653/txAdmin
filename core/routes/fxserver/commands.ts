@@ -91,6 +91,14 @@ export default async function FXServerCommands(ctx: AuthedCtx) {
             description: message
         });
 
+        txCore.kookBot.sendAnnouncement({
+            type: 'info',
+            title: {
+                key: 'nui_menu.misc.announcement_title',
+                data: { author: publicAuthor }
+            },
+            description: message
+        });
         return ctx.send<ApiToastResp>({
             type: 'success',
             msg: 'Announcement command sent.',

@@ -17,3 +17,10 @@ export enum DiscordBotStatus {
     Ready,
     Error,
 }
+
+export enum KookBotStatus {
+    Disabled,
+    Starting,
+    Ready,
+    Error,
+}

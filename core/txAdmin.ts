@@ -4,6 +4,7 @@ import { getCoreProxy } from './boot/globalPlaceholder';
 import TxManager from './txManager';
 import ConfigStore from '@modules/ConfigStore';
 import AdminStore from '@modules/AdminStore';
+import KookBot from '@modules/KookBot';
 import DiscordBot from '@modules/DiscordBot';
 import FxRunner from '@modules/FxRunner';
 import Logger from '@modules/Logger';
@@ -38,6 +39,7 @@ export type TxCoreType = {
 
     //Other
     discordBot: DiscordBot;
+    kookBot: KookBot;
     translator: Translator;
     updateChecker: UpdateChecker;
     webServer: WebServer;
@@ -95,6 +97,7 @@ export default function bootTxAdmin() {
     //Required for signalStartReady()
     _txCore.fxMonitor = startModule(FxMonitor);
     _txCore.discordBot = startModule(DiscordBot);
+    _txCore.kookBot = startModule(KookBot);
     _txCore.logger = startModule(Logger);
     _txCore.fxRunner = startModule(FxRunner);
 

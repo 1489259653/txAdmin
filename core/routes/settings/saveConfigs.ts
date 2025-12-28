@@ -47,7 +47,8 @@ const cardNamesMap = {
     fxserver: 'FXServer',
     bans: 'Bans',
     whitelist: 'Whitelist',
-    discord: 'Discord',
+    discord: 'Discord',    
+    kook: 'KOOK',
     'game-menu': 'Game Menu',
     'game-notifications': 'Game Notifications',
 } as const;
